@@ -1,0 +1,150 @@
+/* with @space:*/
+/* with @space:*/
+/* For image replacement */
+html,
+body {
+  height: 100%;
+}
+#wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#wrapper > header {
+  width: 100%;
+  z-index: 5;
+  overflow: hidden;
+}
+#wrapper > header .header-wrap {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+#wrapper > header .header-nav {
+  float: left;
+}
+#wrapper > header .region-header-baner {
+  width: 33%;
+  float: right;
+}
+#wrapper #container {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0px auto 0px;
+  z-index: 4;
+}
+#wrapper > footer {
+  width: 100%;
+}
+#wrapper > footer .region-header {
+  margin: 0 auto;
+  height: 112px;
+  max-width: 1280px;
+}
+body.sidebar-first #center {
+  margin-left: -220px;
+}
+body.sidebar-first #squeeze {
+  margin-left: 220px;
+  padding-left: 20px;
+}
+body.sidebar-second #center {
+  margin-right: -310px;
+}
+body.sidebar-second #squeeze {
+  margin-right: 310px;
+}
+body.two-sidebars #center {
+  margin: 0 -310px 0 -220px;
+}
+body.two-sidebars #squeeze {
+  margin: 0 310px 0 220px;
+}
+#container #center {
+  float: left;
+  width: 100%;
+}
+#container > aside {
+  float: left;
+  z-index: 2;
+  position: relative;
+}
+#container #sidebar-first {
+  width: 220px;
+  padding-left: 0px;
+}
+#container #sidebar-second {
+  width: 310px;
+  padding-right: 0px;
+}
+/*--------------------------------------------------------*/
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-image: none !important;
+  list-style: none !important;
+  background: none;
+  line-height: 100%;
+}
+/*--------------------------------------------------------*/
+body {
+  color: #000;
+}
+header {
+  background: url(/sites/all/themes/base/styles/images/header_footer_bg.jpg) center no-repeat;
+  background-size: cover;
+}
+header .header-nav {
+  width: 64%;
+  background: url(/sites/all/themes/base/styles/images/header_bg.jpg) top left no-repeat;
+  padding: 65px 1.5%;
+  position: relative;
+}
+header .header-nav .region-header {
+  outline: 1px solid #604e3f;
+  /*---------------------логотип--------------------------*/
+  /*------------------главное меню------------------------*/
+}
+header .header-nav .region-header #block-block-1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -150px;
+  z-index: 1;
+}
+header .header-nav .region-header #block-system-main-menu {
+  padding-top: 64px;
+  position: relative;
+  z-index: 2;
+}
+header .header-nav .region-header #block-system-main-menu .content {
+  background: url(/sites/all/themes/base/styles/images/main_menu_bg.png);
+  overflow: hidden;
+}
+header .header-nav .region-header #block-system-main-menu .content ul {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+header .header-nav .region-header #block-system-main-menu .content li {
+  margin: 0;
+  padding: 0;
+  list-style-image: none;
+  list-style: none;
+  line-height: 100%;
+}
+header .header-nav .region-header #block-system-main-menu .content li a {
+  padding: 0 10px;
+  font-size: 15px;
+  color: #e5e5e4;
+  text-decoration: none;
+  line-height: 56px;
+}
+header .header-nav .region-header #block-system-main-menu .content li a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sources%22%3A%5B%22%5C%2Fsites%5C%2Fall%5C%2Fthemes%5C%2Fbase%5C%2Fstyles%5C%2Flayouts.less%22%2C%22%5C%2Fsites%5C%2Fall%5C%2Fthemes%5C%2Fbase%5C%2Fstyles%5C%2Fstyle.css.less%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22%3B%3B%3BAAAA%3BAAAM%3BEACJ%3B%3BAAGF%3BEACE%3BEACA%3BEACA%3B%3BAAHF%2CQAII%3BEACA%3BEACA%3BEACA%3B%3BAAPJ%2CQAII%2CSAIA%3BEACE%2CiBAAA%3BEACA%3BEACA%2CcAAA%3B%3BAAXN%2CQAII%2CSASA%3BEACE%3B%3BAAdN%2CQAII%2CSAYA%3BEACE%3BEACA%3B%3BAAlBN%2CQAqBE%3BEACE%3BEACA%3BEACA%2CiBAAA%3BEACA%2CoBAAA%3BEACA%3B%3BAA1BJ%2CQA4BI%3BEACA%3B%3BAA7BJ%2CQA4BI%2CSAEA%3BEACE%2CcAAA%3BEACA%2CaAAA%3BEACA%2CiBAAA%3B%3BAAKN%2CIAAI%2CcACH%3BEACC%2CmBAAA%3B%3BAAFF%2CIAAI%2CcAIH%3BEACI%2CkBAAA%3BEACC%3B%3BAAGN%2CIAAI%2CeACH%3BEACC%2CoBAAA%3B%3BAAFF%2CIAAI%2CeAIH%3BEACI%2CmBAAA%3B%3BAAGL%2CIAAI%2CaACH%3BEACC%2CyBAAA%3B%3BAAFF%2CIAAI%2CaAIH%3BEACI%2CuBAAA%3B%3BAAIL%2CUACE%3BEACE%3BEACA%3B%3BAAHJ%2CUAKI%3BEACA%3BEACA%3BEACA%3B%3BAARJ%2CUAaE%3BEACE%2CYAAA%3BEACA%2CiBAAA%3B%3BAAfJ%2CUAiBE%3BEACE%2CYAAA%3BEACA%2CkBAAA%3B%3B%3BACvFJ%3BAAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3B%3BAAAA%3BEAAA%3B%3BAAAA%3BEAAA%2CgBAAA%2C%2BCAAA%3BEAAA%3B%3BAAAA%2CMAAA%3BEAAA%3BEAAA%2CgBAAA%2C0CAAA%3BEAAA%2CkBAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%3BEAAA%2C0BAAA%3B%3B%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CwBAAA%3BEAAA%2CgBAAA%2C0BAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CwBAAA%2CSAAA%3BEAAA%3BEAAA%2CcAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CwBAAA%2CSAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CwBAAA%2CSAAA%2CGAAA%3BEAAA%2CeAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CwBAAA%2CSAAA%2CGAAA%2CEAAA%3BEAAA%22%7D */

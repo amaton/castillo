@@ -1,0 +1,501 @@
+/* with @space:*/
+/* with @space:*/
+/* For image replacement */
+html,
+body {
+  height: 100%;
+}
+#wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#wrapper > header {
+  width: 100%;
+  z-index: 5;
+  overflow: hidden;
+}
+#wrapper > header .header-wrap {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+#wrapper > header .header-nav {
+  float: left;
+}
+#wrapper > header .region-header-baner {
+  width: 33%;
+  float: right;
+}
+#wrapper #container {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0px auto 0px;
+  z-index: 4;
+}
+#wrapper footer {
+  width: 100%;
+}
+#wrapper footer .region-footer {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+}
+body.sidebar-first #center {
+  margin-left: -220px;
+}
+body.sidebar-first #squeeze {
+  margin-left: 220px;
+  padding-left: 20px;
+}
+body.sidebar-second #center {
+  margin-right: -310px;
+}
+body.sidebar-second #squeeze {
+  margin-right: 310px;
+}
+body.two-sidebars #center {
+  margin: 0 -310px 0 -220px;
+}
+body.two-sidebars #squeeze {
+  margin: 0 310px 0 220px;
+}
+#container #center {
+  float: left;
+  width: 100%;
+}
+#container > aside {
+  float: left;
+  z-index: 2;
+  position: relative;
+}
+#container #sidebar-first {
+  width: 220px;
+  padding-left: 0px;
+}
+#container #sidebar-second {
+  width: 310px;
+  padding-right: 0px;
+}
+/*--------------------------------------------------------*/
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-image: none !important;
+  list-style: none !important;
+  background: none;
+  line-height: 100%;
+}
+h1,
+h2,
+h3,
+p {
+  font-weight: normal;
+  margin: 0;
+}
+html {
+  font-size: 10px;
+}
+/*--------------------------------------------------------*/
+body {
+  color: #000;
+  background: url(/sites/all/themes/base/styles/images/header_footer_bg.jpg) top repeat-y;
+  background-size: 100% auto;
+  font-family: 'ACaslonPro-Regular';
+}
+header .header-nav {
+  width: 64%;
+  background: url(/sites/all/themes/base/styles/images/header_bg.jpg) top left no-repeat #ffffff;
+  background-size: cover;
+  padding: 65px 1.5% 60px;
+  position: relative;
+  box-shadow: -5px 0 16px #c5c5c5 inset;
+}
+header .header-nav .region-header {
+  outline: 1px solid #604e3f;
+  /*---------------------логотип--------------------------*/
+  /*------------------главное меню------------------------*/
+}
+header .header-nav .region-header #block-block-1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -150px;
+  z-index: 3;
+}
+header .header-nav .region-header #block-system-main-menu {
+  padding-top: 64px;
+  position: relative;
+  z-index: 2;
+}
+header .header-nav .region-header #block-system-main-menu .content {
+  background: url(/sites/all/themes/base/styles/images/main_menu_bg.png);
+  overflow: hidden;
+}
+header .header-nav .region-header #block-system-main-menu .content ul {
+  width: 87%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+header .header-nav .region-header #block-system-main-menu .content li {
+  margin: 0;
+  padding: 0;
+  list-style-image: none;
+  list-style: none;
+  line-height: 100%;
+}
+header .header-nav .region-header #block-system-main-menu .content li a {
+  padding: 0 10px;
+  font-size: 1.5rem;
+  color: #e5e5e4;
+  text-decoration: none;
+  line-height: 56px;
+  letter-spacing: 3px;
+}
+header .header-nav .region-header #block-system-main-menu .content li a:hover {
+  text-decoration: underline;
+}
+header .header-nav .region-header #block-views-front-slider-block .flexslider {
+  margin: 0;
+  background: none;
+  border: none;
+  position: relative;
+  zoom: 1;
+  border-radius: 0px;
+  box-shadow: none;
+}
+header .header-nav .region-header #block-views-front-slider-block .flexslider .flex-prev,
+header .header-nav .region-header #block-views-front-slider-block .flexslider .flex-next {
+  display: block;
+  opacity: 0.8;
+  font-size: 0;
+  top: 96%;
+  overflow: visible;
+}
+header .header-nav .region-header #block-views-front-slider-block .flexslider .flex-prev:hover,
+header .header-nav .region-header #block-views-front-slider-block .flexslider .flex-next:hover {
+  opacity: 1;
+}
+header .header-nav .region-header #block-views-front-slider-block .flexslider .flex-next {
+  right: 5px;
+}
+header .header-nav .region-header #block-views-front-slider-block .flexslider .flex-prev {
+  left: 5px;
+}
+header .header-nav .region-header #block-views-front-slider-block .flexslider .flex-control-paging {
+  display: none;
+}
+header .header-nav .region-header #block-views-front-slider-block .flexslider .flexslider-views-slideshow-main-frame-row .views-field-field-slide-img {
+  width: 49%;
+  position: relative;
+  z-index: 1;
+  padding: 3% 0 4%;
+}
+header .header-nav .region-header #block-views-front-slider-block .flexslider .flexslider-views-slideshow-main-frame-row .views-field-field-slide-img a {
+  display: block;
+  font-size: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+header .header-nav .region-header #block-views-front-slider-block .flexslider .flexslider-views-slideshow-main-frame-row .views-field-nothing {
+  width: 65%;
+  position: absolute;
+  right: -2.4%;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
+header .header-nav .region-header #block-views-front-slider-block .flexslider .flexslider-views-slideshow-main-frame-row .views-field-nothing h2 {
+  text-align: right;
+  line-height: 180%;
+  position: absolute;
+  top: 10%;
+  right: 19%;
+  font-family: 'SnellRoundhand';
+}
+header .header-nav .region-header #block-views-front-slider-block .flexslider .flexslider-views-slideshow-main-frame-row .views-field-nothing h2 a {
+  font-size: 3.5rem;
+  color: #060606;
+  text-decoration: none;
+}
+header .header-nav .region-header #block-views-front-slider-block .flexslider .flexslider-views-slideshow-main-frame-row .views-field-nothing .slide-description {
+  padding: 30% 6% 0 18%;
+  line-height: 200%;
+}
+header .header-nav .region-header #block-views-front-slider-block .flexslider .flexslider-views-slideshow-main-frame-row .views-field-nothing .review-link {
+  overflow: hidden;
+  position: absolute;
+  bottom: 37%;
+  right: 0;
+  padding: 1px;
+}
+header .header-nav .region-header #block-views-front-slider-block .flexslider .flexslider-views-slideshow-main-frame-row .views-field-nothing .review-link a {
+  font-family: 'SnellRoundhand';
+  display: block;
+  float: right;
+  background: #3d1a00;
+  color: #f6f6f6;
+  font-size: 2rem;
+  padding: 0 23px;
+  line-height: 31px;
+  border: 1px solid #3d1a00;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+header .header-nav .region-header #block-views-front-slider-block .flexslider .flexslider-views-slideshow-main-frame-row .views-field-nothing .review-link a:hover {
+  background: #fff;
+  color: #3d1a00;
+}
+header .header-nav .region-header #block-views-front-slider-block .flexslider .flexslider-views-slideshow-main-frame-row .views-field-nothing .price {
+  font-family: 'Simplifica';
+  text-align: right;
+  color: #3d1a00;
+  font-size: 5.5rem;
+  position: absolute;
+  bottom: 26%;
+  right: 18%;
+  letter-spacing: 5px;
+}
+header .header-nav .region-header #block-views-front-slider-block .flexslider .flexslider-views-slideshow-main-frame-row .views-field-nothing .more {
+  overflow: hidden;
+  position: absolute;
+  bottom: 11%;
+  right: 19%;
+  padding: 1px;
+}
+header .header-nav .region-header #block-views-front-slider-block .flexslider .flexslider-views-slideshow-main-frame-row .views-field-nothing .more a {
+  font-family: 'Simplifica';
+  display: block;
+  float: right;
+  background: #fff;
+  color: #3d1a00;
+  font-size: 1.4rem;
+  padding: 0 75px;
+  line-height: 23px;
+  border: 1px solid #3d1a00;
+  text-decoration: none;
+}
+header .header-nav .region-header #block-views-front-slider-block .flexslider .flexslider-views-slideshow-main-frame-row .views-field-nothing .more a:hover {
+  background: #3d1a00;
+  color: #fff;
+}
+header #block-block-2 {
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 65px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  bottom: 0;
+  position: relative;
+}
+header #block-block-2 .content {
+  color: #fdfcf9;
+}
+header #block-block-2 .content h2 {
+  font-family: 'ACaslonPro-Semibold';
+  padding: 19% 0 6%;
+  color: #fdfcfb;
+  font-size: 3.1rem;
+  line-height: 120%;
+}
+header #block-block-2 .content .slogan {
+  font-size: 1.8rem;
+  padding-bottom: 8%;
+  line-height: 170%;
+  max-width: 60%;
+  margin: 0 auto;
+}
+header #block-block-2 .content .info {
+  margin: 0 auto;
+  padding: 8% 9% 8% 15%;
+  background: url(/sites/all/themes/base/styles/images/info_baner_text_bg.png) top center no-repeat, url(/sites/all/themes/base/styles/images/info_baner_text_bg.png) bottom center no-repeat;
+  font-size: 1.3rem;
+  text-align: left;
+  line-height: 200%;
+}
+/*-----------слайдер топ товаров на главной------------------*/
+#block-views-top-products-block {
+  width: 100%;
+}
+#block-views-top-products-block .flexslider {
+  margin: 0;
+  background: none;
+  border: none;
+  position: relative;
+  zoom: 1;
+  border-radius: 0px;
+  box-shadow: none;
+}
+#block-views-top-products-block .flexslider .flex-prev,
+#block-views-top-products-block .flexslider .flex-next {
+  display: block;
+  opacity: 0.8;
+  font-size: 0;
+  top: 48%;
+  overflow: visible;
+}
+#block-views-top-products-block .flexslider .flex-prev:hover,
+#block-views-top-products-block .flexslider .flex-next:hover {
+  opacity: 1;
+}
+#block-views-top-products-block .flexslider .flex-next {
+  right: 25px;
+}
+#block-views-top-products-block .flexslider .flex-prev {
+  left: 25px;
+}
+#block-views-top-products-block .flexslider .flex-control-paging {
+  display: none;
+}
+#block-views-top-products-block .flexslider .views-field-field-product-images {
+  width: 33%;
+  float: right;
+  padding: 3.6% 0;
+  position: relative;
+  z-index: 2;
+}
+#block-views-top-products-block .flexslider .views-field-field-product-images img {
+  max-width: 420px;
+}
+#block-views-top-products-block .flexslider .views-field-nothing {
+  width: 67%;
+  float: left;
+  background: url(/sites/all/themes/base/styles/images/content_slider_bg.jpg) center no-repeat;
+  background-size: cover;
+  padding: 3.6% 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+#block-views-top-products-block .flexslider .views-field-nothing .field-content {
+  display: block;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+  position: relative;
+}
+#block-views-top-products-block .flexslider .views-field-nothing .field-content .info-wrap {
+  display: block;
+  height: 89.6%;
+  outline: 1px solid #604e3f;
+  margin: 3.4% 2.3%;
+}
+#block-views-top-products-block .flexslider .views-field-nothing .field-content h2 {
+  text-align: left;
+  line-height: 180%;
+  position: absolute;
+  max-width: 40%;
+  top: 30%;
+  left: 12%;
+  font-family: 'SnellRoundhand';
+}
+#block-views-top-products-block .flexslider .views-field-nothing .field-content h2 a {
+  font-size: 3.5rem;
+  color: #060606;
+  text-decoration: none;
+  font-weight: bold;
+}
+#block-views-top-products-block .flexslider .views-field-nothing .field-content .review-link {
+  overflow: hidden;
+  position: absolute;
+  top: 13%;
+  right: 0;
+  padding: 1px;
+}
+#block-views-top-products-block .flexslider .views-field-nothing .field-content .review-link a {
+  font-family: 'SnellRoundhand';
+  display: block;
+  float: right;
+  background: #3d1a00;
+  color: #f6f6f6;
+  font-size: 2rem;
+  padding: 0 23px;
+  line-height: 31px;
+  border: 1px solid #3d1a00;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+#block-views-top-products-block .flexslider .views-field-nothing .field-content .review-link a:hover {
+  background: #fff;
+  color: #3d1a00;
+}
+#block-views-top-products-block .flexslider .views-field-nothing .field-content .price {
+  font-family: 'Simplifica';
+  text-align: right;
+  color: #3d1a00;
+  font-size: 5.5rem;
+  position: absolute;
+  bottom: 30%;
+  right: 11%;
+  letter-spacing: 5px;
+}
+#block-views-top-products-block .flexslider .views-field-nothing .field-content .more {
+  overflow: hidden;
+  position: absolute;
+  bottom: 16.3%;
+  right: 11.6%;
+  padding: 2px;
+}
+#block-views-top-products-block .flexslider .views-field-nothing .field-content .more a {
+  font-family: 'Simplifica';
+  display: block;
+  float: right;
+  background: #fff;
+  color: #3d1a00;
+  font-size: 1.4rem;
+  padding: 0 75px;
+  line-height: 23px;
+  border: 1px solid #3d1a00;
+  text-decoration: none;
+}
+#block-views-top-products-block .flexslider .views-field-nothing .field-content .more a:hover {
+  background: #3d1a00;
+  color: #fff;
+}
+#block-views-front-products-block {
+  width: 100%;
+}
+/*------------подвал----------------*/
+footer .region-footer #block-block-3 .content {
+  font-size: 14px;
+  color: #d2d2d2;
+}
+@media (max-width: 1024px) {
+  #wrapper header .header-nav {
+    width: 97%;
+  }
+  #wrapper header .header-nav .region-header #block-views-front-slider-block .flexslider .flexslider-views-slideshow-main-frame-row .views-field-nothing .review-link {
+    right: 3.5% !important;
+  }
+  #wrapper header .region-header-baner {
+    width: 100%;
+    float: left;
+  }
+  #wrapper header .region-header-baner #block-block-2 {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+    height: auto !important;
+    padding-bottom: 3%;
+  }
+  #wrapper header .region-header-baner #block-block-2 .content h2 {
+    padding: 2% 0;
+  }
+  #wrapper header .region-header-baner #block-block-2 .content .slogan {
+    padding-bottom: 2%;
+    line-height: 120%;
+    max-width: 100%;
+  }
+  #wrapper header .region-header-baner #block-block-2 .content .info {
+    padding: 2% 6%;
+  }
+}
+/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sources%22%3A%5B%22%5C%2Fsites%5C%2Fall%5C%2Fthemes%5C%2Fbase%5C%2Fstyles%5C%2Flayouts.less%22%2C%22%5C%2Fsites%5C%2Fall%5C%2Fthemes%5C%2Fbase%5C%2Fstyles%5C%2Fstyle.css.less%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22%3B%3B%3BAAAA%3BAAAM%3BEACJ%3B%3BAAGF%3BEACE%3BEACA%3BEACA%3B%3BAAHF%2CQAII%3BEACA%3BEACA%3BEACA%3B%3BAAPJ%2CQAII%2CSAIA%3BEACE%2CiBAAA%3BEACA%3BEACA%2CcAAA%3B%3BAAXN%2CQAII%2CSASA%3BEACE%3B%3BAAdN%2CQAII%2CSAYA%3BEACE%3BEACA%3B%3BAAlBN%2CQAqBE%3BEACE%3BEACA%3BEACA%2CiBAAA%3BEACA%2CoBAAA%3BEACA%3B%3BAA1BJ%2CQA4BE%3BEACE%3B%3BAA7BJ%2CQA4BE%2COAEE%3BEACE%2CcAAA%3BEACA%3BEACA%2CiBAAA%3B%3BAAKN%2CIAAI%2CcACH%3BEACC%2CmBAAA%3B%3BAAFF%2CIAAI%2CcAIH%3BEACI%2CkBAAA%3BEACC%3B%3BAAGN%2CIAAI%2CeACH%3BEACC%2CoBAAA%3B%3BAAFF%2CIAAI%2CeAIH%3BEACI%2CmBAAA%3B%3BAAGL%2CIAAI%2CaACH%3BEACC%2CyBAAA%3B%3BAAFF%2CIAAI%2CaAIH%3BEACI%2CuBAAA%3B%3BAAIL%2CUACE%3BEACE%3BEACA%3B%3BAAHJ%2CUAKI%3BEACA%3BEACA%3BEACA%3B%3BAARJ%2CUAaE%3BEACE%2CYAAA%3BEACA%2CiBAAA%3B%3BAAfJ%2CUAiBE%3BEACE%2CYAAA%3BEACA%2CkBAAA%3B%3B%3BACvFJ%3BAAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BEAAA%3BEAAA%3B%3BAAAA%3BEAAA%3B%3B%3BAAAA%3BEAAA%3BEAAA%2CgBAAA%2C2CAAA%3BEAAA%2C0BAAA%3BEAAA%3B%3BAAAA%2CMAAA%3BEAAA%3BEAAA%2CgBAAA%2CkDAAA%3BEAAA%3BEAAA%2CuBAAA%3BEAAA%3BEAAA%2CqCAAA%3B%3BAAAA%2CMAAA%2CYAAA%3BEAAA%2C0BAAA%3B%3B%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CwBAAA%3BEAAA%2CgBAAA%2C0BAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CwBAAA%2CSAAA%3BEAAA%3BEAAA%2CcAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CwBAAA%2CSAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CwBAAA%2CSAAA%2CGAAA%3BEAAA%2CeAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CwBAAA%2CSAAA%2CGAAA%2CEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CgCAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CgCAAA%2CYAAA%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CgCAAA%2CYAAA%2CCAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CgCAAA%2CYAAA%2CWAAA%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CgCAAA%2CYAAA%2CCAAA%2CUAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CgCAAA%2CYAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CgCAAA%2CYAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CgCAAA%2CYAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CgCAAA%2CYAAA%2C2CAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%2CgBAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CgCAAA%2CYAAA%2C2CAAA%2C6BAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CgCAAA%2CYAAA%2C2CAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CgCAAA%2CYAAA%2C2CAAA%2CqBAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CgCAAA%2CYAAA%2C2CAAA%2CqBAAA%2CGAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CgCAAA%2CYAAA%2C2CAAA%2CqBAAA%3BEAAA%2CqBAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CgCAAA%2CYAAA%2C2CAAA%2CqBAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CgCAAA%2CYAAA%2C2CAAA%2CqBAAA%2CaAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%2CeAAA%3BEAAA%3BEAAA%2CyBAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CgCAAA%2CYAAA%2C2CAAA%2CqBAAA%2CaAAA%2CEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CgCAAA%2CYAAA%2C2CAAA%2CqBAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CgCAAA%2CYAAA%2C2CAAA%2CqBAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CgCAAA%2CYAAA%2C2CAAA%2CqBAAA%2CMAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%2CeAAA%3BEAAA%3BEAAA%2CyBAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CYAAA%2CeAAA%2CgCAAA%2CYAAA%2C2CAAA%2CqBAAA%2CMAAA%2CEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%3BEAAA%2C8BAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CeAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CeAAA%2CSAAA%3BEAAA%3BEAAA%2CiBAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CMAAA%2CeAAA%2CSAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%2CcAAA%3B%3BAAAA%2CMAAA%2CeAAA%2CSAAA%3BEAAA%2CcAAA%3BEAAA%2CqBAAA%3BEAAA%2CgBAAA%2C2DAAA%2CwDAAA%3BEAAA%3BEAAA%3BEAAA%3B%3B%3BAAAA%3BEAAA%3B%3BAAAA%2C%2BBAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2C%2BBAAA%2CYAAA%3BAAAA%2C%2BBAAA%2CYAAA%2CCAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2C%2BBAAA%2CYAAA%2CWAAA%3BAAAA%2C%2BBAAA%2CYAAA%2CCAAA%2CUAAA%3BEAAA%3B%3BAAAA%2C%2BBAAA%2CYAAA%3BEAAA%3B%3BAAAA%2C%2BBAAA%2CYAAA%3BEAAA%3B%3BAAAA%2C%2BBAAA%2CYAAA%3BEAAA%3B%3BAAAA%2C%2BBAAA%2CYAAA%3BEAAA%3BEAAA%3BEAAA%2CeAAA%3BEAAA%3BEAAA%3B%3BAAAA%2C%2BBAAA%2CYAAA%2CkCAAA%3BEAAA%3B%3BAAAA%2C%2BBAAA%2CYAAA%3BEAAA%3BEAAA%3BEAAA%2CgBAAA%2CgDAAA%3BEAAA%3BEAAA%2CeAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2C%2BBAAA%2CYAAA%2CqBAAA%3BEAAA%3BEAAA%3BEAAA%2CoCAAA%3BEAAA%3BEAAA%3B%3BAAAA%2C%2BBAAA%2CYAAA%2CqBAAA%2CeAAA%3BEAAA%3BEAAA%3BEAAA%2C0BAAA%3BEAAA%2CiBAAA%3B%3BAAAA%2C%2BBAAA%2CYAAA%2CqBAAA%2CeAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2C%2BBAAA%2CYAAA%2CqBAAA%2CeAAA%2CGAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2C%2BBAAA%2CYAAA%2CqBAAA%2CeAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2C%2BBAAA%2CYAAA%2CqBAAA%2CeAAA%2CaAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%2CeAAA%3BEAAA%3BEAAA%2CyBAAA%3BEAAA%3BEAAA%3B%3BAAAA%2C%2BBAAA%2CYAAA%2CqBAAA%2CeAAA%2CaAAA%2CEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2C%2BBAAA%2CYAAA%2CqBAAA%2CeAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2C%2BBAAA%2CYAAA%2CqBAAA%2CeAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3B%3BAAAA%2C%2BBAAA%2CYAAA%2CqBAAA%2CeAAA%2CMAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%3BEAAA%2CeAAA%3BEAAA%3BEAAA%2CyBAAA%3BEAAA%3B%3BAAAA%2C%2BBAAA%2CYAAA%2CqBAAA%2CeAAA%2CMAAA%2CEAAA%3BEAAA%3BEAAA%3B%3BAAAA%3BEAAA%3B%3B%3BAAAA%2CMAAA%2CeAAA%2CeAAA%3BEAAA%3BEAAA%3B%3BAAAA%2CQAAA%3BEAAA%2CQAAA%2COAAA%3BIAAA%3B%3BEAAA%2CQAAA%2COAAA%2CYAAA%2CeAAA%2CgCAAA%2CYAAA%2C2CAAA%2CqBAAA%3BIAAA%3B%3BEAAA%2CQAAA%2COAAA%3BIAAA%3BIAAA%3B%3BEAAA%2CQAAA%2COAAA%2CqBAAA%3BIAAA%3BIAAA%3BIAAA%3BIAAA%3BIAAA%3B%3BEAAA%2CQAAA%2COAAA%2CqBAAA%2CeAAA%2CSAAA%3BIAAA%2CaAAA%3B%3BEAAA%2CQAAA%2COAAA%2CqBAAA%2CeAAA%2CSAAA%3BIAAA%3BIAAA%3BIAAA%3B%3BEAAA%2CQAAA%2COAAA%2CqBAAA%2CeAAA%2CSAAA%3BIAAA%2CcAAA%22%7D */

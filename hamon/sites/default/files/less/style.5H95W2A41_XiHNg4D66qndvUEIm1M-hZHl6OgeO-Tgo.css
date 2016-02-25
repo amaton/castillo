@@ -1,0 +1,82 @@
+/* with @space:*/
+/* with @space:*/
+/* For image replacement */
+html,
+body {
+  height: 100%;
+}
+#wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#wrapper > header {
+  width: 100%;
+  z-index: 5;
+  overflow: hidden;
+}
+#wrapper > header .header-wrap {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+#wrapper > header .region-header {
+  width: 60%;
+  float: left;
+}
+#wrapper #container {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0px auto 0px;
+  z-index: 4;
+}
+#wrapper > footer {
+  width: 100%;
+}
+#wrapper > footer .region-header {
+  margin: 0 auto;
+  height: 112px;
+  max-width: 1280px;
+}
+body.sidebar-first #center {
+  margin-left: -220px;
+}
+body.sidebar-first #squeeze {
+  margin-left: 220px;
+  padding-left: 20px;
+}
+body.sidebar-second #center {
+  margin-right: -310px;
+}
+body.sidebar-second #squeeze {
+  margin-right: 310px;
+}
+body.two-sidebars #center {
+  margin: 0 -310px 0 -220px;
+}
+body.two-sidebars #squeeze {
+  margin: 0 310px 0 220px;
+}
+#container #center {
+  float: left;
+  width: 100%;
+}
+#container > aside {
+  float: left;
+  z-index: 2;
+  position: relative;
+}
+#container #sidebar-first {
+  width: 220px;
+  padding-left: 0px;
+}
+#container #sidebar-second {
+  width: 310px;
+  padding-right: 0px;
+}
+body {
+  color: #000;
+  font-family: 'OpenSans';
+}
+/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sources%22%3A%5B%22%5C%2Fsites%5C%2Fall%5C%2Fthemes%5C%2Fbase%5C%2Fstyles%5C%2Flayouts.less%22%2C%22%5C%2Fsites%5C%2Fall%5C%2Fthemes%5C%2Fbase%5C%2Fstyles%5C%2Fstyle.css.less%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22%3B%3B%3BAAAA%3BAAAM%3BEACJ%3B%3BAAGF%3BEACE%3BEACA%3BEACA%3B%3BAAHF%2CQAII%3BEACA%3BEACA%3BEACA%3B%3BAAPJ%2CQAII%2CSAIA%3BEACE%2CiBAAA%3BEACA%3BEACA%2CcAAA%3B%3BAAXN%2CQAII%2CSAUA%3BEACC%3BEACC%3B%3BAAhBN%2CQAoBE%3BEACE%3BEACA%3BEACA%2CiBAAA%3BEACA%2CoBAAA%3BEACA%3B%3BAAzBJ%2CQA2BI%3BEACA%3B%3BAA5BJ%2CQA2BI%2CSAEA%3BEACE%2CcAAA%3BEACA%2CaAAA%3BEACA%2CiBAAA%3B%3BAAKN%2CIAAI%2CcACH%3BEACC%2CmBAAA%3B%3BAAFF%2CIAAI%2CcAIH%3BEACI%2CkBAAA%3BEACC%3B%3BAAGN%2CIAAI%2CeACH%3BEACC%2CoBAAA%3B%3BAAFF%2CIAAI%2CeAIH%3BEACI%2CmBAAA%3B%3BAAGL%2CIAAI%2CaACH%3BEACC%2CyBAAA%3B%3BAAFF%2CIAAI%2CaAIH%3BEACI%2CuBAAA%3B%3BAAIL%2CUACE%3BEACE%3BEACA%3B%3BAAHJ%2CUAKI%3BEACA%3BEACA%3BEACA%3B%3BAARJ%2CUAaE%3BEACE%2CYAAA%3BEACA%2CiBAAA%3B%3BAAfJ%2CUAiBE%3BEACE%2CYAAA%3BEACA%2CkBAAA%3B%3BACtFJ%3BEAAA%3BEAAA%22%7D */

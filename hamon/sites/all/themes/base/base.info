@@ -1,0 +1,20 @@
+name = Base
+core = 7.x
+stylesheets[all][] = styles/base.css
+stylesheets[all][] = styles/slick.css
+stylesheets[all][] = styles/style.css.less
+stylesheets[all][] = styles/fonts/fonts.css
+
+
+scripts[] = js/slick.min.js
+scripts[] = js/init.js
+
+
+regions[header] = Header
+regions[header_baner] = Header Baner
+regions[content] = Content
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+regions[highlighted] = Highlighted
+regions[footer] = Footer
+regions[help] = Help

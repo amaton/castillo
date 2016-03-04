@@ -51,6 +51,12 @@
     });
     window.onload = function() {
         $('#block-block-2').css({'height':$('.region-header').height()});
+        $('.open-close-button').click(
+            function(){
+                $('#block-block-5 .info-wrap').fadeToggle(400);
+            }
+
+        );
     };
     $( window ).resize(function() {
         $('#block-block-2').css({'height':$('.region-header').height()});

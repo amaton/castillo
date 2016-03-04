@@ -1,6 +1,7 @@
 @import "variables.less";
 @import "mixin.less";
 @import "layouts.less";
+@import "not-front.less";
 
 /*--------------------------------------------------------*/
 ul, li{
@@ -17,10 +18,6 @@ h1,h2,h3,p{
 }
 html{
   font-size: 10px;
-}
-.slick-loading .slick-list
-{
-  background: #fff url('./ajax-loader.gif') center center no-repeat;
 }
 /*--------------------------------------------------------*/
 body {
@@ -89,6 +86,7 @@ header{
           }
         }
       }
+      /*-----информационный слайдер на главной-----------------*/
       #block-views-front-slider-block{
         .flexslider{
           margin:0;
@@ -230,7 +228,8 @@ header{
       }
     }
   }
-  #block-block-2{
+  /*-----текстовый блок на главной------------*/
+  #block-block-2,#block-block-5{
     background: rgba(0,0,0,0.5);
     margin-top: 65px;
     width: 100%;
@@ -534,6 +533,7 @@ header{
 .front #block-system-main{
   display: none;
 }
+
 /*------------подвал----------------*/
 footer{
   .region-footer{
@@ -593,6 +593,275 @@ footer{
      }
   }
 }
+
+/*-------------------------------------Каталог-----------------------------------*/
+
+/*Страницы каталога*/
+.not-front{
+  #wrapper{
+    header{
+      overflow: visible;
+    .header-nav{
+      padding: 65px 1.5% 0px;
+      box-shadow: none;
+      background: none;
+      #block-block-1{
+        z-index: 9999;
+      }
+      .region-header{
+        outline: 1px solid #604e3f;
+
+        /*------------------главное меню------------------------*/
+        #block-system-main-menu{
+          padding: 64px 0 0;
+          position: relative;
+          z-index: 9998;
+          outline: 1px solid #604e3f;
+
+        }
+      }
+    }
+    .region-header-baner{
+      position: relative;
+      #block-block-5{
+        position: absolute;
+        top: 0;
+        bottom: auto;
+        z-index: 100;
+
+        .content{
+          font-size: 15px;
+          text-align: left;
+          color: #e5e5e4;
+          .title{
+            font-size: 31px;
+            font-family: 'ACaslonPro-Semibold';
+            font-weight: normal;
+            color: #fff;
+            width: 80%;
+            margin: 0 auto;
+            padding: 18% 0 4%;
+            border-bottom: 1px solid #fff;
+            letter-spacing: 2px;
+          }
+          ul{
+            width: 80%;
+            margin: 0 auto;
+            padding: 10% 0 7% 0%;
+            border-bottom: 1px solid #fff;
+            li{
+              margin-bottom: 6.5%;
+              margin-left: 3%;
+              a{
+                color: #e5e5e4;
+                text-decoration: none;
+                &:hover{
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+          .payments-with{
+            width: 80%;
+            margin: 0 auto;
+            padding: 10% 0 7% 0%;
+            margin-bottom: 10%;
+            border-bottom: 1px solid #fff;
+            text-align: center;
+            font-size: 18px;
+            font-family: 'ACaslonPro-Semibold';
+          }
+        }
+      }
+    }
+  }
+#block-system-main{
+  margin-top: -185px;
+  padding: 185px 1.5% 2px;
+  width: 64%;
+  //background: url("images/not_ront_main_bg.jpg") 0 260px no-repeat;
+  background: url("images/header_bg.jpg") top center no-repeat #fff;
+  background-size: 100% auto;
+}
+    .view-catalog{
+      outline: 1px solid #604e3f;
+    padding-top: 17%;
+    position: relative;
+      overflow: hidden;
+      margin-top: 0%;
+
+
+    .view-header{
+      position: absolute;
+      top:0px;
+      left: 3%;
+      padding-top: 7.1%;
+      h1{
+        font-family: 'ACaslonPro-Semibold';
+        font-size: 43px;
+        font-weight: normal;
+        color:#322623;
+        letter-spacing: 4px;
+      }
+    }
+    .view-filters{
+      position: absolute;
+      top: 0px;
+      right: 4%;
+      padding-top: 3.2%;
+
+      .views-widget-sort-sort_bef_combine{
+        padding: 0;
+        width: 320px;
+        label{
+          float: left;
+          color: #140e0c;
+          font-size: 18px;
+          font-family: 'ACaslonPro-Semibold';
+          line-height: 34px;
+          letter-spacing: 2px;
+        }
+        .form-radios{
+          border:1px solid #3d1a00;
+          height: 24px;
+          width: 181px;
+          float: right;
+          &:hover{
+            background: #ccc;
+          }
+          .selected-edit-sort-bef-combine-commerce-price-amount-desc{
+            margin: 0;
+            background: url("images/sort_bottom.png") 10px 5px no-repeat;
+
+            a{
+              color: #000;
+              font-size: 14px;
+              text-decoration: none;
+              display: block;
+              padding-left: 45px;
+              height: 24px;
+            }
+          }
+          .selected-edit-sort-bef-combine-commerce-price-amount-asc{
+            margin: 0;
+            background: url("images/sort_top.png") 10px 5px no-repeat;
+            a{
+              color: #000;
+              font-size: 14px;
+              text-decoration: none;
+              display: block;
+              padding-left: 45px;
+              height: 24px;
+
+            }
+          }
+
+        }
+      }
+    }
+    .view-content{
+      .views-row{
+        overflow: hidden;
+        position: relative;
+        background: url("images/catalog_row_bg.png") bottom center no-repeat;
+        background-size: 100% 1px;
+        .views-field{
+          float: left;
+          width: 64%;
+        }
+        .views-field-field-product-images{
+          width: 36%;
+          float: left;
+          img{
+            width: 100%;
+            height: auto;
+          }
+        }
+        .views-field-title{
+          padding: 2.7% 0 0 1%;
+          float: left;
+          width: 63%;
+          a{
+            font-family: 'SnellRoundhand';
+            color: #060606;
+            font-size: 25px;
+            text-decoration: none;
+            letter-spacing: 2px;
+            font-weight: bold;
+          }
+        }
+        .views-field-field-product-desc{
+          font-size: 12px;
+          margin: 5% 0 0 4%;
+          width: 30%;
+          li{
+            margin: 2.5% 0;
+            list-style: disc !important;
+          }
+        }
+        .views-field-nothing-1{
+          margin-top: 1%;
+          margin-bottom: 3%;
+          margin-left: 36%;
+          a{
+            font-family: 'Simplifica';
+            display: block;
+            float: left;
+            background: #fff;
+            color: #3d1a00;
+            font-size: 1.4rem;
+            padding: 0 65px;
+            line-height: 23px;
+            border: 1px solid #3d1a00;
+            text-decoration: none;
+            margin: 0% 0 0 1.5%;
+            letter-spacing: 2px;
+            padding-top: 1px;
+            &:hover{
+              background: #3d1a00;
+              color: #fff;
+            }
+          }
+        }
+        .views-field-commerce-price{
+          font-family: 'Simplifica';
+          text-align: right;
+          color: #3d1a00;
+          font-size: 5.3rem;
+          position: absolute;
+          bottom: 23%;
+          right: 2%;
+          letter-spacing: 4px;
+          float: right;
+          width: 200px;
+        }
+        .views-field-field-price-for-100g{
+          font-size: 12px;
+          position: absolute;
+          bottom: 20%;
+          right: 6%;
+          width: 200px;
+          text-align: right;
+        }
+        .views-field-nothing{
+          font-size: 12px;
+          position: absolute;
+          bottom: 15%;
+          right: 6%;
+          width: 200px;
+          text-align: right;
+        }
+      }
+      .views-row-last{
+        background: no-repeat;
+      }
+    }
+
+
+  }
+  }
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media (max-width: 1024px) {
   #wrapper{
     header{
@@ -673,6 +942,72 @@ footer{
   #block-views-top-products-block .flexslider .views-field-nothing .field-content h2 a{
     font-size: 3rem;
   }
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  .not-front{
+    #wrapper{
+      header{
+
+        .region-header-baner{
+
+          #block-block-5{
+            position: absolute;
+            top: 0;
+            right: 5%;
+            bottom: auto;
+            z-index: 100;
+            background: none;
+
+            .content{
+
+              .open-close-button{
+                width: 50px;
+                height: 50px;
+                border:1px solid #ccc;
+                float: right;
+                background: url("images/navicon.png") no-repeat center;
+                background-size: cover;
+                cursor: pointer;
+                &:hover{
+                  background: url("images/navicon.png") no-repeat center #ddd;
+                  background-size: cover;
+                }
+              }
+              .info-wrap{
+                display: none;
+                clear: both;
+                background: rgba(0,0,0,0.9);
+                overflow: hidden;
+              }
+              .title{
+                padding: 5% 0 5%;
+              }
+              ul{
+
+                padding: 5% 0 5% 0%;
+                li{
+                  margin-bottom: 3.5%;
+                }
+              }
+              .payments-with{
+                padding: 5% 0 5% 0%;
+
+              }
+            }
+          }
+        }
+      }
+      #block-system-main{
+
+        width: 97%;
+        .view-catalog{
+
+          .view-filters{
+            right: 2%;
+          }
+        }
+      }
+    }
+  }
 }
 @media (max-width: 767px) {
   /*-------------главное меню минимальный размер --------------*/
@@ -715,6 +1050,75 @@ footer{
   }
   #block-views-top-products-block .flexslider .views-field-nothing .field-content .review-link{
     display: none;
+  }
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  .not-front{
+    #wrapper{
+      header{
+
+        .region-header-baner{
+
+          #block-block-5{
+            margin-top: 8.3%%;
+            right: 7%;
+          }
+        }
+      }
+      #block-system-main{
+
+        width: 97%;
+        .view-catalog{
+          padding-top: 20%;
+          .view-header{
+            padding-top: 3%;
+          }
+          .view-filters{
+            top: 4%;
+            left: 3%;
+            right: auto;
+          }
+          .view-content{
+            .views-row{
+              overflow: hidden;
+              position: relative;
+              background: url("images/catalog_row_bg.png") bottom center no-repeat;
+              background-size: 100% 1px;
+              padding-bottom: 80px;
+
+              .views-field-field-product-desc{
+                width: 60%;
+              }
+
+              .views-field-commerce-price{
+
+                bottom: 26px;
+                right: auto;
+                left: 35%;
+                z-index: 1;
+
+              }
+              .views-field-field-price-for-100g{
+
+                bottom: 28px;
+                right: auto;
+                left: 35%;
+                z-index: 2;
+
+              }
+              .views-field-nothing{
+                bottom: 10px;
+                right: auto;
+                left: 35%;
+                z-index: 3;
+              }
+            }
+            .views-row-last{
+              background: no-repeat;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (max-width: 480px) {

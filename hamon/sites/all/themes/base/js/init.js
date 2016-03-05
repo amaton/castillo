@@ -53,10 +53,16 @@
         $('#block-block-2').css({'height':$('.region-header').height()});
         $('.open-close-button').click(
             function(){
+
                 $('#block-block-5 .info-wrap').fadeToggle(400);
             }
 
         );
+        $('.open-close-button').toggle(function () {
+            $('#block-block-5 .info-wrap').css({'width':'400px'});
+        }, function () {
+            $('#block-block-5 .info-wrap').css({'width':'50px'});
+        });
     };
     $( window ).resize(function() {
         $('#block-block-2').css({'height':$('.region-header').height()});

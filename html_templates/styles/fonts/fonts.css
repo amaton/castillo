@@ -1,0 +1,31 @@
+
+@font-face {
+    font-family: 'ACaslonPro-Regular';
+    src: url('ACaslonPro-Regular.eot?#iefix') format('embedded-opentype'),  url('ACaslonPro-Regular.otf')  format('opentype'),
+    url('ACaslonPro-Regular.woff') format('woff'), url('ACaslonPro-Regular.ttf')  format('truetype'), url('ACaslonPro-Regular.svg#ACaslonPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Simplifica';
+    src: url('Simplifica.eot?#iefix') format('embedded-opentype'),  url('Simplifica.woff') format('woff'), url('Simplifica.ttf')  format('truetype'), url('Simplifica.svg#Simplifica') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'ACaslonPro-Semibold';
+  src: url('ACaslonPro-Semibold.eot?#iefix') format('embedded-opentype'),  url('ACaslonPro-Semibold.otf')  format('opentype'),
+	     url('ACaslonPro-Semibold.woff') format('woff'), url('ACaslonPro-Semibold.ttf')  format('truetype'), url('ACaslonPro-Semibold.svg#ACaslonPro-Semibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'SnellRoundhand';
+    src: url('SnellRoundhand.eot?#iefix') format('embedded-opentype'),  url('SnellRoundhand.woff') format('woff'), url('SnellRoundhand.ttf')  format('truetype'), url('SnellRoundhand.svg#SnellRoundhand') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
